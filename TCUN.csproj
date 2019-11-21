@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BCDEF491-6EAE-437F-86B4-293B243D62E9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TCUN</RootNamespace>
+    <AssemblyName>TCUN</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="COD Stuff\All_Offsets.cs" />
+    <Compile Include="COD Stuff\INI.cs" />
+    <Compile Include="COD Stuff\Offsets.cs" />
+    <Compile Include="FH\FH_Host.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FH\FH_Host.Designer.cs">
+      <DependentUpon>FH_Host.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FH\FH_Not_Host_Settings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FH\FH_Not_Host_Settings.Designer.cs">
+      <DependentUpon>FH_Not_Host_Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FH\ForceHost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FH\ForceHost.Designer.cs">
+      <DependentUpon>ForceHost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool\FPS\FPSUnlocker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tool\FPS\FPSUnlocker.Designer.cs">
+      <DependentUpon>FPSUnlocker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Account.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\Account.Designer.cs">
+      <DependentUpon>Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool\FOV\FOV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tool\FOV\FOV.Designer.cs">
+      <DependentUpon>FOV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Theme\CircularButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme\circularpicturebox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Theme\RoundedButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme\RoundedRectangleF.cs" />
+    <Compile Include="Pages\Settings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Theme\SwitchApple.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="COD Stuff\Trainer.cs" />
+    <Compile Include="Tool\FPS\FPS_Disable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tool\FPS\FPS_Disable.Designer.cs">
+      <DependentUpon>FPS_Disable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool\FPS\FPS_Settings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tool\FPS\FPS_Settings.Designer.cs">
+      <DependentUpon>FPS_Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool\FPS\FPS_Visuals.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tool\FPS\FPS_Visuals.Designer.cs">
+      <DependentUpon>FPS_Visuals.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FH\FH_Host.resx">
+      <DependentUpon>FH_Host.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FH\FH_Not_Host_Settings.resx">
+      <DependentUpon>FH_Not_Host_Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FH\ForceHost.resx">
+      <DependentUpon>ForceHost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tool\FOV\FOV.resx">
+      <DependentUpon>FOV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tool\FPS\FPSUnlocker.resx">
+      <DependentUpon>FPSUnlocker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Account.resx">
+      <DependentUpon>Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Pages\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tool\FPS\FPS_Disable.resx">
+      <DependentUpon>FPS_Disable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tool\FPS\FPS_Settings.resx">
+      <DependentUpon>FPS_Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tool\FPS\FPS_Visuals.resx">
+      <DependentUpon>FPS_Visuals.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cogs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload  16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fov2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fps.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visual.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visual32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disable32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
